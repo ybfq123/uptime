@@ -62,7 +62,7 @@ const workerConfig = {
       id: '02',
       name: '网盘',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
+      method: 'POST',
       // `target` should be `host:port` for tcp monitors
       target: 'https://file.sxtyybfq.tk:8443',
       timeout: 10000,
