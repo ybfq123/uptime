@@ -3,9 +3,9 @@ const pageConfig = {
   title: "lyc8503's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'https://blog.lyc8503.net/', label: 'Blog' },
-    { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
+   // { link: 'https://github.com/lyc8503', label: 'GitHub' },
+    { link: 'https://blog.sxtyybfq.tk/', label: 'Blog' },
+   // { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
   ],
 }
 
@@ -49,15 +49,15 @@ const workerConfig = {
     },
     // Example TCP Monitor
     {
-      id: 'test_tcp_monitor',
-      name: 'Example TCP Monitor',
+      id: '01',
+      name: '永不放弃学习博客',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'TCP_PING',
+      method: 'GET',
       // `target` should be `host:port` for tcp monitors
-      target: '1.2.3.4:22',
+      target: 'https://blog.sxtyybfq.tk',
       tooltip: 'My production server SSH',
       statusPageLink: 'https://example.com',
-      timeout: 5000,
+      timeout: 10000,
     },
   ],
   notification: {
