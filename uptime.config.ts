@@ -3,7 +3,7 @@ const pageConfig = {
   title: "永不放弃监控's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
-   // { link: 'https://github.com/lyc8503', label: 'GitHub' },
+    { link: 'https://file.sxtyybfq.tk:8443', label: '网盘' },
     { link: 'https://blog.sxtyybfq.tk', label: 'Blog' },
    // { link: 'mailto:me@lyc8503.net', label: 'Email Me', highlight: true },
   ],
@@ -56,6 +56,16 @@ const workerConfig = {
       // `target` should be `host:port` for tcp monitors
       target: 'https://blog.sxtyybfq.tk',
       statusPageLink: 'https://blog.sxtyybfq.tk',
+      timeout: 10000,
+    },
+    {
+      id: '02',
+      name: '网盘',
+      // `method` should be `TCP_PING` for tcp monitors
+      method: 'GET',
+      // `target` should be `host:port` for tcp monitors
+      target: 'https://file.sxtyybfq.tk:8443',
+      statusPageLink: 'https://file.sxtyybfq.tk:8443',
       timeout: 10000,
     },
   ],
